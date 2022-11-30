@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu currículo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+          $("#flip").click(function(){
+            $("#panel").slideDown("slow");
+          });
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#hide").click(function(){
+                $("b").hide();
+              });
+              $("#show").click(function(){
+                $("b").show();
+              });
+            });
+            </script>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+        header {
+            text-align: center;
+        }
+        img { 
+            border-radius: 200px;
+        }
+        h2 {
+            background-color: pink;
+        }
+        h3 {
+            background-color: pink;
+        }
+        h4{
+            background-color: pink;
+        }
+        h5 {
+            background-color: pink;
+        }
+        footer {
+            text-align: center;
+        }
+        #panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: pink;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+    </style>
+</head>
+<body class="container">
+    <header><img src="eu.png" alt="Minha foto" width="300">
+    <h1>Isabela Amado da Rocha</h1>
+    </header>
+<section class row>
+    <p class="row">Atualmente estou cursando Engenharia de computação no Inteli; Tenho como objetivo aperfeiçoar tanto meu desenvolvimento profissional, como o crescimento pessoal e agregar a empresa .</p>
+
+    <h2 class="row">
+        Formação acadêmica
+    </h2>
+    <p class="row">
+        Ensino Médio Completo - Colégio Visconde de Porto Seguro (SP)- 2021
+    </p>
+
+    <h3 class="row">
+        Idiomas
+    </h3>
+    <p class="row">
+        Português,inglês e Alemão
+    </p>
+
+    <h4 class="row">
+        Informações complementares
+    </h4>
+    <ul class="row">
+       <li> Curso Technoleader: Curso de robótica, liderança e empreendedorismo com carga horária total de 180 horas. 2020</li>
+        
+
+    </ul>
+    <br>
+    
+</section>
+    <form class="row">
+        <a href="http://127.0.0.1:3001/informacao">
+            <input type="button" value="CLIQUE AQUI PARA PUXAR INFORMAÇÕES DO BANCO DE DADOS(MÉTODO READ)">
+        </a>
+    </form>
+    <div id="flip">Clique para ter acesso a mais informações!</div>
+    <div id="panel">bla bla bla</div>
+    <b>Use os botões abaixo para ter uma supresa!!</b>
+
+<button id="hide">Esconder</button>
+<button id="show">Mostrar</button>
+</body>
+</html>
