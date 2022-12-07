@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <script src="exe1.js"></script>
+</head>
+<body>
+    <h1>VALOR PRESENTE E VALOR FUTURO</h1>
+    Selecione valor presente ou valor futuro:
+
+    <select name="opcao" id="opcao">
+      <option value="valor_presente">Valor presente</option>
+      <option value="valor_futuro">Valor futuro</option>
+    </select>
+    <br><br>
+    Insira o valor:
+    <input type="number" name="valor" id="valor"><br><br>
+    Insira a taxa em %:
+    <input type="number" name="taxa" id="taxa"><br><br>
+    Insira o tempo:
+    <input type="number" name="tempo" id="tempo"><br><br>
+      <input type="button" value="Calcular" onclick="calcular()">
+      <div id="res"></div>
+</body>
+</html>
